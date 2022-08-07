@@ -1,0 +1,22 @@
+.messageWrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 4px 10px 4px;
+
+  /* background: rgb(241, 2, 2); */
+  border-bottom: 2px solid #eeeeee;
+}
+
+.col {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+  background-color: bisque;
+}
