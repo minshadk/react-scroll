@@ -10,13 +10,19 @@ import anderson from "./assets/images/anderson.png";
 import gina from "./assets/images/gina.png";
 import lutz from "./assets/images/lutz.png";
 import hannah from "./assets/images/hannah.png";
+import Badge from "./components/Badge/Badge";
 
 function App() {
   let [friends, setFriends] = useState([
-    { userName: "Carla", userImage: carla },
-    { userName: "Anderson", userImage: anderson },
-    { userName: "Gina", userImage: gina },
-    { userName: "Lutz", userImage: lutz },
+    { userName: "Carla", userImage: carla, notification: "4", time: "3:32pm" },
+    {
+      userName: "Anderson",
+      userImage: anderson,
+      notification: "4",
+      time: "3:32pm",
+    },
+    { userName: "Gina", userImage: gina, notification: "4", time: "3:32pm" },
+    { userName: "Lutz", userImage: lutz, notification: "1", time: "3:32pm" },
     { userName: "Hannah", userImage: hannah },
   ]);
   // let friends = ;
@@ -26,7 +32,6 @@ function App() {
 
   const handleSearch = (input) => {
     setSearchInput(input);
-    console.log("function called");
 
     const filtered = friends.filter((friend) => {
       if (input === "") return friend;
@@ -44,26 +49,31 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="new-connections">
-          <h3>New Connections</h3>
-          {/* <div className="users">
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-            <Connections userName={"person 1"} />
-          </div> */}
+          <div>
+            <span>New Connections</span>
+            <Badge notification={0} orange={true} />
+          </div>
+          <div className="users">
+            <Connections
+              userName={"person 1"}
+              userImage={anderson}
+              indicator={true}
+            />
+            <Connections
+              userName={"person 1"}
+              userImage={carla}
+              indicator={true}
+            />
+            <Connections userName={"person 1"} userImage={gina} />
+            <Connections userName={"person 1"} userImage={lutz} />
+            <Connections userName={"person 1"} userImage={hannah} />
+          </div>
         </div>
         <div className="messages">
           {/* <div className="messages-container"> */}
           <div className="top-bar">
             <div>
-              <h4>Messages</h4>
+              <span>Messages</span> <Badge notification={0} orange={true} />
             </div>
             <div className="search-bar">
               <label>
@@ -84,6 +94,8 @@ function App() {
                     userName={friend.userName}
                     message={"tesigng message lorem"}
                     userImage={friend.userImage}
+                    notification={friend.notification}
+                    time={friend.time}
                   />
                 ))
               : friends.map((friend) => (
@@ -91,6 +103,8 @@ function App() {
                     userName={friend.userName}
                     message={"tesigng message lorem"}
                     userImage={friend.userImage}
+                    notification={friend.notification}
+                    time={friend.time}
                   />
                 ))}
           </div>

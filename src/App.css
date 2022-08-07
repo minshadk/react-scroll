@@ -21,9 +21,13 @@
   margin-inline: auto;
   background: #eef9fc;
   height: 100vh;
-
+  /* padding-top:20px ; */
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.new-connections {
+  padding: 35px 0px 0px 20px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -52,6 +56,10 @@
   background-color: #fff;
   padding: 35px 20px 0px 20px;
   border-radius: 25px 25px 0 0;
+  /* position: fixed; */
+  /* position: fixed;
+  bottom: 0; */
+  min-height: 75vh;
 }
 
 .search-bar {

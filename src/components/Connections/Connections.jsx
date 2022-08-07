@@ -1,12 +1,12 @@
 import Avatar from "../Avatar/Avatar";
 // import styles from "./Avatar.module.css";
 
-import styles from "./Connections.module.css"
+import styles from "./Connections.module.css";
 
-const Connections = ({ userName, userImage }) => {
+const Connections = ({ userName, userImage, indicator }) => {
   return (
     <div className={styles.connections}>
-      <Avatar />
+      <Avatar userImage={userImage} indicator={indicator} />
       <h6 className={styles.username}>{userName}</h6>
     </div>
   );

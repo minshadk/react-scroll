@@ -1,9 +1,13 @@
 import styles from "./Avatar.module.css";
 
-const Avatar = ({userImage}) => {
+const Avatar = ({ userImage, message, indicator }) => {
   return (
-    <div>
-      <img src={userImage} className={styles.avatar} />
+    <div
+      className={[message ? styles.messages : styles.connections]}
+      // message ? styles.message : styles.connections
+      style={{ backgroundImage: `url(${userImage})` }}
+    >
+      <span className={indicator ? styles.indicator : null}></span>
     </div>
   );
 };

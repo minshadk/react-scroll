@@ -1,0 +1,20 @@
+.message {
+  display: inline;
+  border-radius: 50%;
+  padding: 2px 3.9px;
+  /* padding: 5px; */
+  background-color: #eef9fc;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.orange {
+    display: inline;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 7px;
+    /* padding: 5px; */
+    background-color: #f29a49;
+    font-size: 15px;
+    font-weight: bold;
+}
