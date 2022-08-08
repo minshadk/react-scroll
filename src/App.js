@@ -1,4 +1,5 @@
-import { useState } from "react";
+import {  useState } from "react";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 import "./App.css";
 import Connections from "./components/Connections/Connections";
@@ -41,10 +42,6 @@ function App() {
     setFilteredFriends(filtered);
   };
 
-  // if (searchInput !== "") {
-  //   handleSearch(searchInput);
-  // }
-
   return (
     <div className="App">
       <div className="container">
@@ -53,21 +50,21 @@ function App() {
             <span>New Connections</span>
             <Badge notification={0} orange={true} />
           </div>
-          <div className="users">
-            <Connections
-              userName={"person 1"}
-              userImage={anderson}
-              indicator={true}
-            />
-            <Connections
-              userName={"person 1"}
-              userImage={carla}
-              indicator={true}
-            />
-            <Connections userName={"person 1"} userImage={gina} />
-            <Connections userName={"person 1"} userImage={lutz} />
-            <Connections userName={"person 1"} userImage={hannah} />
-          </div>
+            <ScrollContainer horizontal={true} vertical={false} className="users">
+              <Connections
+                userName={"person 1"}
+                userImage={anderson}
+                indicator={true}
+              />
+              <Connections
+                userName={"person 1"}
+                userImage={carla}
+                indicator={true}
+              />
+              <Connections userName={"person 1"} userImage={gina} />
+              <Connections userName={"person 1"} userImage={lutz} />
+              <Connections userName={"person 1"} userImage={hannah} />
+            </ScrollContainer>
         </div>
         <div className="messages">
           {/* <div className="messages-container"> */}
