@@ -94,7 +94,7 @@ function App() {
                 filteredFriends.map((friend) => (
                   <Messages
                     userName={friend.userName}
-                    message={"tesigng message lorem"}
+                    message={"drag to scroll connections"}
                     userImage={friend.userImage}
                     notification={friend.notification}
                     time={friend.time}
@@ -103,7 +103,7 @@ function App() {
               : friends.map((friend) => (
                   <Messages
                     userName={friend.userName}
-                    message={"tesigng message lorem"}
+                    message={"drag to scroll connections"}
                     userImage={friend.userImage}
                     notification={friend.notification}
                     time={friend.time}
