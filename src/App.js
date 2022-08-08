@@ -2,7 +2,6 @@ import { useState } from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 import "./App.css";
 
-
 //Importing custom components
 import Connections from "./components/Connections/Connections";
 import Messages from "./components/Messages/Messages";

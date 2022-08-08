@@ -1,7 +1,5 @@
 .base {
   border-radius: 50%;
-  min-height: 75px;
-  min-width: 75px;
   background-color: bisque;
   background-size: cover;
   background-position: center;
@@ -10,8 +8,8 @@
 
 .connections {
   border-radius: 50%;
-  min-height: 75px;
-  min-width: 75px;
+  min-height: 65px;
+  min-width: 65px;
   background-color: bisque;
   background-size: cover;
   background-position: center;
@@ -20,8 +18,8 @@
 
 .messages {
   border-radius: 50%;
-  min-height: 85px;
-  min-width: 85px;
+  min-height: 75px;
+  min-width: 75px;
   background-color: bisque;
   background-size: cover;
   background-position: center;
