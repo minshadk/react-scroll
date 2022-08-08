@@ -4,7 +4,6 @@ const Avatar = ({ userImage, message, indicator }) => {
   return (
     <div
       className={[message ? styles.messages : styles.connections]}
-      // message ? styles.message : styles.connections
       style={{ backgroundImage: `url(${userImage})` }}
     >
       <span className={indicator ? styles.indicator : null}></span>

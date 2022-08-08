@@ -8,7 +8,7 @@ const Messages = ({ userName, message, time, userImage, notification }) => {
       <Avatar userImage={userImage} message={true} />
       <div className={styles.col}>
         <div className={styles.row}>
-          <h2>{userName}</h2>
+          <h2 className={styles.userName}>{userName}</h2>
           <h6 className={styles.messageTime}>{time}</h6>
         </div>
         <div className={styles.row}>

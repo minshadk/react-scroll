@@ -1,5 +1,4 @@
 import Avatar from "../Avatar/Avatar";
-// import styles from "./Avatar.module.css";
 
 import styles from "./Connections.module.css";
 

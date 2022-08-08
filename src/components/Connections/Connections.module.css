@@ -4,11 +4,11 @@
   flex-direction: column;
   align-items: center;
   width: 50px;
-  /* background-color: aquamarine; */
 }
 
 .username {
-  /* text-align: center */
   padding-top: 10px;
   color: #989ea2;
+  font-family: 'Uchen', serif;
+
 }
